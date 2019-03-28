@@ -3,7 +3,7 @@
   "info" : {
     "version" : "5.0.0",
     "title" : "OakOS Dashboard API",
-    "description" : "The Dashboard API provides a secure way to remotely issue commands to OakOS devices. All endpoints are generated from the [OakOS Platform gRPC API](https://github.com/OakLabsInc/platform-protos) ",
+    "description" : "The Dashboard API provides a secure way to remotely issue commands to OakOS devices. All endpoints are generated from the [OakOS Platform gRPC API](https://github.com/OakLabsInc/platform-protos)",
     "license" : {
       "name" : "Apache-2.0"
     },
@@ -23,7 +23,7 @@
       "in" : "header"
     }
   },
-  "schemes" : [ "https", "http" ],
+  "schemes" : [ "https" ],
   "consumes" : [ "application/json" ],
   "produces" : [ "application/json" ],
   "paths" : {
