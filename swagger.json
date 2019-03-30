@@ -23,7 +23,7 @@
       "in" : "header"
     }
   },
-  "schemes" : [ "https" ],
+  "schemes" : [ "https", "http" ],
   "consumes" : [ "application/json" ],
   "produces" : [ "application/json" ],
   "paths" : {
@@ -889,7 +889,7 @@
         } ]
       }
     },
-    "/claim/remove/{claimMachine}/{claimDomain}" : {
+    "/manage/{claimDomain}/claim/remove/{claimMachine}" : {
       "get" : {
         "description" : "Remove the claim from a machine. This will erase all command history and other attributes, use with caution",
         "summary" : "Claim Remove",
@@ -924,7 +924,7 @@
         } ]
       }
     },
-    "/claim/complete/{claimMachine}/{claimCode}/{claimDomain}" : {
+    "/manage/{claimDomain}/claim/complete/{claimCode}" : {
       "get" : {
         "description" : "Complete a claim for a machine, using the code shown on the Default Application of OakOS",
         "summary" : "Claim Complete",
